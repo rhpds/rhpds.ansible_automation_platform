@@ -25,6 +25,6 @@
     openshift_bearer_token: "{{ r_oc_whoami.stdout }}"
 
 - name: Save ocp bearer token agnosticd_user_info ssh data
-  agnosticd_user_info:
+  agnosticd.core.agnosticd_user_info:
     data:
       openshift_bearer_token: "{{ openshift_bearer_token }}"
